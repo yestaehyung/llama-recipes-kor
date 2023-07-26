@@ -41,10 +41,13 @@ Llama 2모델은 상업적으로 사용하능하고, 더 자세한 부분은 [Ll
 ## Requirements
 To run the examples, make sure to install the requirements using
 
-** torch 버전 2.0.0 사용해야하므로, CUDA version은 11.7 이상을 사용해야합니다. 
+torch 버전 2.0.0 사용해야하므로, CUDA version은 11.7 이상을 사용해야합니다.
+bitsandbytes는 torch 설치 후에 설치 해야지, 오류가 나지 않았습니다.(~~많은 경험을 알아낸...~~)
 
 ```bash
+
 pip install torch==2.0.0+cu117 torchvision==0.15.1+cu117 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu117
+
 ```
 
 ```bash
