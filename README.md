@@ -2,8 +2,10 @@
 
 본 repository는 meta에서 개발한 [Llama 2](https://github.com/facebookresearch/llama)를 잘 사용하기 위해 만들어진 'llama-recipes'를 한국어로 번역한 것입니다. Llama 2를 domain에 맞게 fine-tuing하고, tuning한 model을 inference하는 방법도 확인할 수 있습니다. Fine-tuning과 inference를 하기 위해서는 Hugging Face model로 바꾸는 것이 필요로 하며, [여기](#model-conversion-to-hugging-face)에서 방법을 확인할 수 있습니다.
 
+대학원에서 LLM과 Multimodal 관련해서 연구하는데, 제가 본 레포지토리를 사용하면서 얻었던 경험을 공유하고 싶어서 한글화 하고 있습니다. (~~도움이 되었다면 star 좀 흑흑..~~) 
+미숙한 글솜씨로 작성한 내용이 이해가 안되는 부분 알려주시면, 같이 고민해 보아도 좋을 것 같습니다.
 
-Llama 2 is a new technology that carries potential risks with use. Testing conducted to date has not — and could not — cover all scenarios. In order to help developers address these risks, we have created the [Responsible Use Guide](https://github.com/facebookresearch/llama/blob/main/Responsible-Use-Guide.pdf). More details can be found in our research paper as well. For downloading the models, follow the instructions on [Llama 2 repo](https://github.com/facebookresearch/llama).
+Llama 2모델은 상업적으로 사용하능하지만, 더 자세한 부분은 [Llama 2 repo](https://github.com/facebookresearch/llama)를 확인해주세요.
 
 
 # Table of Contents
