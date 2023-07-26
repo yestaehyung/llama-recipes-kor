@@ -1,6 +1,7 @@
-# Llama 2 Fine-tuning / Inference Recipes and Examples
+# Facebook Meta에서 개발한 Llama 2 Fine-tuning과 inference를 쉽게하기 위한 codebook
 
-The 'llama-recipes' repository is a companion to the [Llama 2 model](https://github.com/facebookresearch/llama). The goal of this repository is to provide examples to quickly get started with fine-tuning for domain adaptation and how to run inference for the fine-tuned models. For ease of use, the examples use Hugging Face converted versions of the models. See steps for conversion of the model [here](#model-conversion-to-hugging-face).
+본 repository는 meta에서 개발한 [Llama 2](https://github.com/facebookresearch/llama)를 잘 사용하기 위해 만들어진 'llama-recipes'를 한국어로 번역한 것입니다. Llama 2를 domain에 맞게 fine-tuing하고, tuning한 model을 inference하는 방법도 확인할 수 있습니다. Fine-tuning과 inference를 하기 위해서는 Hugging Face model로 바꾸는 것이 필요로 하며, [여기](#model-conversion-to-hugging-face)에서 방법을 확인할 수 있습니다.
+
 
 Llama 2 is a new technology that carries potential risks with use. Testing conducted to date has not — and could not — cover all scenarios. In order to help developers address these risks, we have created the [Responsible Use Guide](https://github.com/facebookresearch/llama/blob/main/Responsible-Use-Guide.pdf). More details can be found in our research paper as well. For downloading the models, follow the instructions on [Llama 2 repo](https://github.com/facebookresearch/llama).
 
