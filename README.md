@@ -3,19 +3,18 @@
 본 repository는 meta에서 개발한 [Llama 2](https://github.com/facebookresearch/llama)를 잘 사용하기 위해 만들어진 'llama-recipes'를 한국어로 번역한 것입니다. Llama 2를 domain에 맞게 fine-tuing하고, tuning한 model을 inference하는 방법도 확인할 수 있습니다. Fine-tuning과 inference를 하기 위해서는 Hugging Face model로 바꾸는 것이 필요로 하며, [여기](#model-conversion-to-hugging-face)에서 방법을 확인할 수 있습니다.
 
 대학원에서 LLM과 Multimodal 관련해서 연구하는데, 제가 본 레포지토리를 사용하면서 얻었던 경험을 공유하고 싶어서 한글화 하고 있습니다. (~~도움이 되었다면 star 좀 흑흑..~~) 
-미숙한 글솜씨로 작성한 내용이 이해가 안되는 부분 알려주시면, 같이 고민해 보아도 좋을 것 같습니다.
+이렇게 정리하는 것이 처음이라 궁금하거나, 이해가 안되는 부분 알려주시면 제가 경험해본 선에서 답변해드리겠습니다.
 
-Llama 2모델은 상업적으로 사용하능하지만, 더 자세한 부분은 [Llama 2 repo](https://github.com/facebookresearch/llama)를 확인해주세요.
-
+Llama 2모델은 상업적으로 사용하능하고, 더 자세한 부분은 [Llama 2 repo](https://github.com/facebookresearch/llama)를 확인해주세요.
 
 # Table of Contents
-1. [Quick start](#quick-start)
-2. [Fine-tuning](#fine-tuning)
+1. [시작하기](#quick-start)
+2. [Fine-tuning 하기](#fine-tuning)
     - [Single GPU](#single-gpu)
     - [Multi GPU One Node](#multiple-gpus-one-node)
     - [Multi GPU Multi Node](#multi-gpu-multi-node)
-3. [Inference](./docs/inference.md)
-4. [Model Conversion](#model-conversion-to-hugging-face)
+3. [Inference 하기](./docs/inference.md)
+4. [Hugging face model로 변환하기](#model-conversion-to-hugging-face)
 5. [Repository Organization](#repository-organization)
 6. [License and Acceptable Use Policy](#license)
 
@@ -23,7 +22,8 @@ Llama 2모델은 상업적으로 사용하능하지만, 더 자세한 부분은 
 
 # Quick Start
 
-[Llama 2 Jupyter Notebook](quickstart.ipynb): This jupyter notebook steps you through how to finetune a Llama 2 model on the text summarization task using the [samsum](https://huggingface.co/datasets/samsum). The notebook uses parameter efficient finetuning (PEFT) and int8 quantization to finetune a 7B on a single GPU like an A10 with 24GB gpu memory.
+[Llama 2 기초 jupyter notebook](quickstart.ipynb): Llama 2 model을 어떻게 fine-tuning하고 inference할 수 있는지 확인할 수 있는 notebook입니다. Fine-tuning은 [samsum](https://huggingface.co/datasets/samsum) 이라는 대화를 요약하는 데이터셋으로 진행을 합니다. PEFT와 LoRA를 사용해서 GPU 메모리가 24GB일 경우 7B와 13B 모델을 파인튜닝 시킬 수 있습니다. 
+제가 실험한 환경은 RTX 3090 24GB 4대를 사용하였고, 13B model을 학습할 때 15GB 정도를 잡고 있고, 시간은 1시간 정도 걸린 것 같습니다.
 
 **Note** All the setting defined in [config files](./configs/) can be passed as args through CLI when running the script, there is no need to change from config files directly.
 
