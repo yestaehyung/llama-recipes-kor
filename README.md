@@ -14,7 +14,7 @@ Llama 2모델은 상업적으로 사용하능하고, 더 자세한 부분은 [Ll
     - [Multi GPU One Node](#multiple-gpus-one-node)
     - [Multi GPU Multi Node](#multi-gpu-multi-node)
 3. [Inference 하기](./docs/inference.md)
-4. [Hugging face model로 변환하기](#model-conversion-to-hugging-face)
+4. [Hugging face model로 변환하기](#model-conversion-to-hugging-face)
 5. [Repository Organization](#repository-organization)
 6. [License and Acceptable Use Policy](#license)
 
