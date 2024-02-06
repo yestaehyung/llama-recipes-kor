@@ -2,6 +2,8 @@
 
 본 repository는 meta에서 개발한 [Llama 2](https://github.com/facebookresearch/llama)를 잘 사용하기 위해 만들어진 'llama-recipes'를 한국어로 번역한 것입니다. Llama 2를 domain에 맞게 fine-tuing하고, tuning한 model을 inference하는 방법도 확인할 수 있습니다. Fine-tuning과 inference를 하기 위해서는 Hugging Face model로 바꾸는 것이 필요로 하며, [여기](#model-conversion-to-hugging-face)에서 방법을 확인할 수 있습니다.
 
+### H100에서는 PEFT, LoRA을 사용하는 모델에 대해 GPU error 가 발생하는 것을 확인 (2024/02/06)
+
 대학원에서 LLM과 Multimodal 관련해서 연구하는데, 제가 본 레포지토리를 사용하면서 얻었던 경험을 공유하고 싶어서 한글화 하고 있습니다. (~~도움이 되었다면 star 좀 흑흑..~~) 
 이렇게 정리하는 것이 처음이라 궁금하거나, 이해가 안되는 부분 알려주시면 제가 경험해본 선에서 답변해드리겠습니다.
 
@@ -122,10 +124,9 @@ You can read more about our fine-tuning strategies [here](./docs/LLM_finetuning.
 
 
 # Model conversion to Hugging Face
-The recipes and notebooks in this folder are using the Llama 2 model definition provided by Hugging Face's transformers library.
+Meta 에서 다운로드 받은 llama 2 모델을 Hugging Face의 transformer 라이브러리를 사용하여 변환하는 방법입니다.
 
-Given that the original checkpoint resides under models/7B you can install all requirements and convert the checkpoint with:
-
+모델을 변환하면 좋은 이유에 대해서는 (추가 예정)
 ```bash
 ## Install HuggingFace Transformers from source
 pip install git+https://github.com/huggingface/transformers
